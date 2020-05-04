@@ -1,0 +1,100 @@
+% ------------------------------------------------------------------------
+% -------------------      Plantilla_UIS.tex       -----------------------
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% Versión de plantilla para realización de informes de trabajo de grado
+% construida para uso de la Universidad Industrial de Santander.
+%
+% Reservados todos los derechos
+%
+% Bucaramanga, Colombia
+% Febrero 03 de 2019
+%
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+\documentclass[letter,oneside,12pt,spanish]{report}  % Encabezados
+\usepackage[utf8]{inputenc}
+
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{booktabs}
+\usepackage{uislatexstyleAPA}
+\usepackage{verbatim} 
+% Libreria UIS APA
+% ------------------------------------------------------------------------
+% Ingrese en este punto las librerías específicas de usuario
+% -----------------------------------------------------------------------
+
+\usepackage{amsmath, amsfonts}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{multirow}
+%\usepackage{url}
+
+
+% Inicio de documento
+% -------------------------------------------------------------------
+\begin{document}
+% Inicio de documento
+% ------------------------------------------------------------------------
+% Definición silábica de palabras
+% ------------------------------------------------------------------------
+%\hyphenation{pro-por-cio-nal di-se-ño}
+% ------------------------------------------------------------------------
+% Titulo resumido del trabajo que aparecerá en cornisa
+%https://www.overleaf.com/project/5e82cd0e525d6d00011cf82f% ------------------------------------------------------------------------
+\title{REGISTRO DE EVENTOS PROYECTO LAGO}
+% ------------------------------------------------------------------------
+% Elementos previos al contenido del trabajo
+% ------------------------------------------------------------------------
+\include{Secs/P0}             % Portadilla, formato de nota y autorización
+% ------------------------------------------------------------------------
+%\include{Secs/dedicatoria}                                   % Dedicatoria
+% ------------------------------------------------------------------------
+%\include{Secs/agradecimientos}                           % Agradecimientos
+% ------------------------------------------------------------------------
+\tableofcontents                                      % Tabla de contenido
+% ------------------------------------------------------------------------
+\listoffigures                         % Lista de figuras, tablas y anexos
+\listoftables
+%\listofanexo
+% ------------------------------------------------------------------------
+\include{Secs/glosario}                             % Glosario de términos
+% ------------------------------------------------------------------------
+% Contenido del Informe
+% ------------------------------------------------------------------------
+\include{Secs/res}                                               % Resumen
+\include{Secs/abs}                                              % Abstract
+% ------------------------------------------------------------------------
+% Capítulos
+% ------------------------------------------------------------------------
+\input{Secs/T0}   % Introducción
+\include{Secs/T1}   % Objetivos
+\include{Secs/T2}   % Marco teórico
+\input{Secs/T3}   % sistema de adquisición proyecto LAGO
+\input{Secs/T4}   % implementación proyecto LAGO
+\input{Secs/T5}   % Resultados
+%\input{Secs/T6}   % Recomendaciones
+\input{Secs/T7}   % Trabajo futuro
+\input{Secs/T8}   % Conclusiones
+% ------------------------------------------------------------------------
+% Bibliografía
+% ------------------------------------------------------------------------
+\addcontentsline{toc}{chapter}{Referencias}\newpage
+\bibliographystyle{apalike}
+\bibliography{xbib}
+% ------------------------------------------------------------------------
+% Anexos
+% ------------------------------------------------------------------------
+%\input{Secs/anexoA} % Fundamentos de sólidos rígidos
+%\input{Secs/anexoB} % Función ode45 de MATLAB
+%\input{Secs/anexoC} % Interfaz de animación de la dinámica del sistema
+% ------------------------------------------------------------------------
+\end{document}                                          % Fin de documento
+% ------------------------------------------------------------------------

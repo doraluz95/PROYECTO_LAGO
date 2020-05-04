@@ -1,0 +1,36 @@
+% ------------------------------------------------------------------------
+%                                Resumen
+% ------------------------------------------------------------------------
+\chapter*{Resumen}
+
+\footnotesize{
+\begin{description}
+  \item[Título:] Implementación de un sistema para el registro de eventos relacionados con
+rayos cósmicos secundarios \astfootnote{Trabajo de grado}
+  \item[Autor:] Dora Luz Ballesteros Delgado \asttfootnote{Facultad de Ingenierías Físico-Mecánicas. Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones. Director: Carlos Andrés Angulo Julio, Magíster en Ing. Electrónica.}
+  \item[Palabras Clave:] WCD, PMT, Radiación Cherenkov, LAGO, FPGA, EAS.
+  \item[Descripción:] 
+  Este proyecto tiene como objetivo mejorar el sistema de adquisición de datos usado en la red de colaboración LAGO (\textit{Latin American Giant Observatory}), la cual implementa un sistema digital para la detección de eventos que pueden ser considerados fenómenos debidos a rayos cósmicos.
+  Con esta mejora se busca darle continuidad al proyecto LAGO así como independencia del sistema de adquisición respecto a las referencias de FPGA que se encuentran en el mercado ya que en el ciclo completo de diseño se han empleado herramientas de software libre.
+
+El sistema de preprocesamiento de señales se rediseñó para que fuese llevado a cabo por medio de un procesador de propósito específico implementado en la FPGA.
+En la FPGA también se implementó un conjunto de bloques jerárquicos tales como: control de voltaje de polarización para los tubos fotomultiplicadores, corrección de línea base y discriminación de datos.
+Esto permite aumentar en 10 MHz la frecuencia de muestreo y mejorar la resolución de la señal de entrada hasta 4 veces.
+
+Adicionalmente, el sistema de adquisición integra periféricos para establecer el tiempo de adquisición, la ubicación geográfica, la presión atmosférica y la temperatura ambiente por medio de una Raspberry Pi que toma lecturas de un GPS y de sensores de temperatura y presión.
+Así mismo, esta Raspberry Pi se comunica a la FPGA por protocolo SPI para poder generar un reporte y guardar en un archivo la información de las señales registradas.
+Este archivo puede ser enviado a otro dispositivo con el fin de analizar los datos de los eventos que pueden ser considerados rayos cósmicos.
+
+
+%___antiguo
+
+%\item[Descripción:] En este proyecto se busca mejorar el sistema de adquisición de datos usado en la colaboración LAGO y darles continuidad e independencia respecto a las referencias de FPGA que se encuentran temporalmente en el mercado.
+%Para esto se implementará un sistema basado en una Raspberry y una FPGA de hardware libre al cual se le ingresará información captada por un detector Cherenkov.
+%En la FPGA se implementarán un conjunto de bloques jerárquicos (tales como: discriminación de datos, corrección línea base y control voltaje de polarización para los tubos fotomultiplicadores) que permitan detectar eventos relacionados con rayos cósmicos.
+%En la Raspberry se desarrollarán algoritmos que permitan la comunicación con los periféricos para establecer el tiempo de adquisición, la ubicación geográfica, la presión atmosférica y la temperatura ambiente. 
+%Así mismo, en este dispositivo se generará y guardará un archivo con la información de las señales registradas.
+\end{description}}\normalsize
+
+
+
+% ------------------------------------------------------------------------ 

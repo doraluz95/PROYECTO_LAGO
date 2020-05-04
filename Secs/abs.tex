@@ -1,0 +1,24 @@
+% ------------------------------------------------------------------------
+%                                Abstract
+% ------------------------------------------------------------------------
+\chapter*{Abstract}
+
+\footnotesize{
+\begin{description}
+  \item[Title:] Implementation of a data acquisition system for secondary cosmic rays.\astfootnote{Bachelor Thesis}
+  \item[Author:] Dora Luz Ballesteros Delgado\asttfootnote{Facultad de Ingenierías Físico-Mecánicas. Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones. Director: Carlos Andrés Angulo Julio, Magíster en Ing. Electrónica.}
+  \item[Keywords:] WCD, PMT, Cherenkov Radiation, LAGO, FPGA, EAS.
+  \item[Description:] 
+This project aims to improve the data acquisition system used in the LAGO (Latin American Giant Observatory) collaboration network, which implements a digital system for the detection of events that could be considered phenomena due to cosmic rays.
+This improvement seeks to give continuity to the LAGO project as well as independence of the acquisition system regarding FPGA references that are on the market due to free software tools have been used in the complete design cycle.
+
+The signal preprocessing system was redesigned to be carried out by a specific purpose processor implemented in the FPGA.
+A set of hierarchical blocks such as bias voltage control for photomultiplier tubes, baseline correction, and data discrimination were also implemented in the FPGA.
+This allows the sampling rate to be increased by 10 MHz and the resolution of the input signal to be improved up to 4 times.
+
+Additionally, the acquisition system integrates peripherals to establish the acquisition time, geographic location, atmospheric pressure, and ambient temperature using a Raspberry Pi that takes readings from a GPS and from temperature and pressure sensors.
+Likewise, this Raspberry Pi communicates with the FPGA by SPI protocol in order to generate a report and save in a file the information of the registered signals.
+This file can be sent to another device in order to analyze the data of the events that can be considered cosmic rays.
+
+\end{description}}\normalsize
+% ------------------------------------------------------------------------ 
