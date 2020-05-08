@@ -8,9 +8,18 @@
 
 \chapter{Resultados}
 
-En esta sección se evidencia en primera instancia las simulaciones a nivel RTL de los circuitos descritos en HDL para la actualización del proyecto LAGO. A su vez  los resultados se comparan con las mediciones del hardware en el proyecto original evidenciando la respuesta del sistema ante una entrada conocida. 
+En esta sección se evidencia en primera instancia las simulaciones a nivel RTL de los circuitos descritos en HDL para la actualización del proyecto LAGO. A su vez  los resultados se comparan con las mediciones del hardware en el proyecto original evidenciando la respuesta del sistema ante una entrada conocida.
 
-Cabe resaltar que las simulaciones que se presentan a continuación , tienen como entrada una base de datos en representación binaria a 12 bits y formato \texttt{.mem}, la cual se genera con eventos extraídos de los archivos de salida obtenidos con la versión orginal del proyecto LAGO.
+Para verificar el diseño de los circuitos descritos a nivel RTL en la FPGA se toma un archivo de los ya existentes de LAGO y se ingresa mediante memorias en la FPGA de emulación en este caso la Nexys 4 para entregar los datos provenientes del ADC y esta se conecta  la FPGA Icoboard para hacer todo el procesamiento de los datos provenientes de los adc y así determinar los eventos para finalmente en la Raspberry se guarda la infomacion junto con los datos provenientes de los periféricos para entregar todo complilado en el archivo de salida .dat. Esta verificación se muestra en la Figura~\ref{verifi}.
+
+\begin{figure}[H]
+\includegraphics[width=1\textwidth]{Figs/verifica.png} 
+\centering
+\caption{Implementación para verificación de resultados}
+\label{verifi}
+\end{figure}
+
+Para verificar las descripciones implementadas a nivel RTL se simularon los diseños originales del proyecto LAGO para ser comparadas con los actuales. Cabe resaltar que las simulaciones que se presentan a continuación , tienen como entrada una base de datos en representación binaria a 12 bits y formato \texttt{.mem}, la cual se genera con eventos extraídos de los archivos de salida obtenidos con la versión orginal del proyecto LAGO.
 Dichos archivos han sido validados por el grupo de investigación Halley encargado del proyecto en Colombia.
 
 \section{\textbf{Comparación simulaciones de LAGO}}
@@ -22,7 +31,7 @@ Dichos archivos han sido validados por el grupo de investigación Halley encarga
 \label{sim2ms}
 \end{figure}
 
-\subsection{Simulación Baseline versión (original y actualizada)}
+\subsection{Comparación simulación Baseline versión original y actualizada}
 En la simulación mostrada en la Figura~\ref{sim2ms} en color café se muestra la actualización de la señal (ptick\_2ms) con un período de 2ms.
 
 A cada canal de entrada (data\_adc1, data\_adc2, data\_adc3) se le ingresa una señal diferente desde la memoria del hardwware externo. Las señales de salida (baseline\_1, baseline\_2, baseline\_3), tienen el mismo comportamiento, ya que en el diseño se tiene un contador que acumula por 2 ms los datos provenientes de cada canal y calcula un promedio del error en la entrada con respecto a una referencia de 50 mV que en este caso corresponde a 50 niveles de cuantización. La salida de este circuito será conectada a un DAC para generar el voltaje necesario y así, corregir el offset de línea base para mantener el sistema en estado estable.  
@@ -69,7 +78,7 @@ En la Figura~\ref{baseor}, el cursor amarillo se ubica en el mismo instante de t
 \end{figure}
 %__________________________________________________________________________Seguir revisando 
 
-\subsection{Simulación Rampa (original y actualizada)}
+\subsection{Comparación simulación rampa versión original y actualizada}
 En esta simulación se evidencian algunos cambios realizados respecto al diseño original LAGO con el fin de aplicar unas mejoras. Una es la restricción del máximo valor que el usuario puede ingresar como parámetro de entrada DATA\_IN(1023) a la rampa.
 Dado que en la versión original aunque el valor máximo efectivo es 1023, es posible ingresar un número mayor así no tenga efecto alguno en la generación de la señal de salida.
 
@@ -127,7 +136,7 @@ Las simulaciones evidencian que las dos versiones presentan el mismo tiempo de e
 
 
 
-\subsection{Simulación Trigger (original y actual)}
+\subsection{Comparación simulación Trigger versión original y actualizada}
 Las señales se estimulan con un reloj de periodo 20 ns.
 %Se estimulan las señales con un periodo de 20ns, en la Figura~\ref{tigeer} El segmento extraido expone el funcionamento del circuito para la discriminación de datos llamado Trigger.
 
@@ -222,7 +231,8 @@ En la Figura~\ref{adecuacion} se muestra un evento para corrobar el funcionamien
 \label{adecuacion}
 \end{figure}
 
-En las siguientes gráficas se resume el comportamiento de los datos entregados por el sensor de presión y temperatura.
+Con el sistema de adquisición implementado se tomaron datos de presión y temperatura durante media hora los cuales se muestran en las siguientes graficas, estos datos son importantes en el proyecto LAGO ya que mediante análisis de estos datos se logra hacer correcciones en los detectores WCD. 
+
 
 \begin{figure}[H]
 \includegraphics[width=0.9\textwidth]{Figs/TEMPERATURA.PNG} 
@@ -238,5 +248,8 @@ En las siguientes gráficas se resume el comportamiento de los datos entregados 
 \label{pre}
 \end{figure}
 
+Con el sistema de adquisición implementado se tomaron datos de presión y temperatura durante media hora los cuales se muestran en estas graficas, estos datos son importantes en el proyecto Lago ya que mediante análisis de estos datos se logra hacer correcciones en los detectores WCD. 
+
+Finalmente con el diseño descrito durante el desarrollo del proyecto se logra optimizar el sistema de adquisición para dar soporte y continuidad al proyecto implementando una lógica distinta a la del proyecto LAGO, mejorando la compatibilidad con los dispositivos para almacenar información relevante de los periféricos HP03S y GPS. Mediante herramientas de desarrollo libres como Yosys, Arachne, Icepack y Iceprog se logra la independencia respecto a las FPGA en el proyecto. 
 
 % ------------------------------------------------------------------------ 

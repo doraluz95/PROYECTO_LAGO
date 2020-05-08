@@ -16,8 +16,8 @@ The signal preprocessing system was redesigned to be carried out by a specific p
 A set of hierarchical blocks such as bias voltage control for photomultiplier tubes, baseline correction, and data discrimination were also implemented in the FPGA.
 This allows the sampling rate to be increased by 10 MHz and the resolution of the input signal to be improved up to 4 times.
 
-Additionally, the acquisition system integrates peripherals to establish the acquisition time, geographic location, atmospheric pressure, and ambient temperature using a Raspberry Pi that takes readings from a GPS and from temperature and pressure sensors.
-Likewise, this Raspberry Pi communicates with the FPGA by SPI protocol in order to generate a report and save in a file the information of the registered signals.
+Moreover, the acquisition system integrates peripherals to establish the acquisition time, geographic location, atmospheric pressure, and ambient temperature using a Raspberry Pi that takes readings from a GPS and from temperature and pressure sensors.
+Likewise, this Raspberry Pi communicates with the FPGA by SPI protocol in order to generate a report and store in a file the information of the registered signals.
 This file can be sent to another device in order to analyze the data of the events that can be considered cosmic rays.
 
 \end{description}}\normalsize

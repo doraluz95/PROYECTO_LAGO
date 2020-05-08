@@ -3,6 +3,9 @@
 % ------------------------------------------------------------------------
 \chapter{Sistema de adquisición del proyecto LAGO}
 % ------------------------------------------------------------------------
+El proyecto LAGO esta compuesto por detectores de agua Cherenkov  ubicados en toda América latina. Estos detectores cuentan  con un sistema de adquisición electrónico que se compone de una etapa analógica para adquisición y una digital para el procesamiento de eventos relacionados con rayos cósmicos, en la Figura~\ref{sistema_adquisicion} se muestra el sistema actual, la tarjeta electrónica digitaliza pulsos de tres canales independientes a una frecuencia de 40~MHz, la FPGA es la encargada del procesamiento. La Nexys 2 y el GPS se encuentran fuera del mercado por lo cual se pone en riesgo la continuidad del proyecto. Por esta razón en este proyecto se busca actualizar la etapa de procesamiento digital haciendo uso de herramientas libres que dan independecia respecto a las FPGA en el proyecto.
+
+
 En esta sección se describe la metodología usada para alcanzar cada uno de los objetivos planteados en el plan del proyecto.
 Se implementa a nivel HDL los circuitos diseñados para discriminar, digitalizar y registrar aquellos pulsos que se consideran eventos.
 Además se registra la hora, geolocalización del detector, temperatura y presión atmósferica. Los datos son agrupados en un archivo de salida que se entrega para su posterior análisis.
@@ -87,7 +90,7 @@ El nivel de cuantización suministrado al DAC(MAX5501) se realiza en el circuito
 \end{figure}
 
 En ~\citep{haro2016data} se diseña un circuito inversor, cuya entrada es una señal analógica invertida. Es decir, para aumentar la salida se debe disminuir la entrada y viceversa. En el circuito Figura~\ref{salida baseline} es la señal que llega al multiplexor (MUX 2-1) y se actualiza cada 2 ms. 
-Para el cálculo del módulo del circuito se tiene en cuenta los ciclos de reloj necesarios para generar 2 ms. En este caso, el nivel de voltaje buscado coincide con 50 niveles de cuantización, como se observa en la ecuación~\eqref{eq1}
+Para el cálculo del módulo del circuito se tiene en cuenta los ciclos de reloj necesarios para generar 2 ms de la actualización. En este caso, el nivel de voltaje buscado coincide con 50 niveles de cuantización, como se observa en la ecuación~\eqref{eq1}
 \begin{equation} \label{eq1}
     \#ciclos \times nivel\_de\_cuantizaci\acute{o}n = umbral \rightarrow 100000 \times 50 = 5000000\
 \end{equation}
@@ -125,7 +128,7 @@ La rampa protege los PMT de cambios bruscos de voltaje que pueden dañarlo. El u
 \label{frecuencia}
 \end{figure}
 
-El control de la PWM se establece con una frecuencia de 10~KHz Figura\ref{frecuencia} y una actualización cada 2ms Figura\ref{cicloutil} para lograr el control de su ciclo útil mediante la comparación respecto al umbral establecido por el usuario Figura~\ref{pwm}.
+El control de la PWM se establece con una frecuencia de 10~KHz se muestra en la Figura\ref{frecuencia} y una actualización cada 2ms Figura\ref{cicloutil} para lograr el control de su ciclo útil mediante la comparación respecto al umbral establecido por el usuario Figura~\ref{pwm}.
 \begin{figure}[h]
 \includegraphics[width=0.9\textwidth]{Figs/RAMPA33.PNG} 
 \centering
@@ -140,7 +143,7 @@ De esta manera se ajusta el voltaje del PMT por medio de un conversor que interp
 \begin{figure}[h]
 \includegraphics[scale=1]{Figs/RAMPA22.PNG} 
 \centering
-\caption{Circuito señal de control PWM, (OUT\_REG) ciclo útil, (R\_REG) frecuencia}
+\caption[Circuito señal de control PWM]{, (OUT\_REG) ciclo útil, (R\_REG) frecuencia}
 \label{salida}
 \end{figure}
 
@@ -168,7 +171,7 @@ El registro de desplazamiento Figura~\ref{desplazamiento} se encarga de entregar
 \label{desplazamiento}
 \end{figure}
 
-En la Figura~\ref{detectorumbral} se tiene un conjunto de comparadores conectados al registro [3, 2, 1] que determinan si el registro [3] wa mayor y los registros [2,1] son menores al umbral de activación se procede a almacenar todas las posiciones del registro anterior de la siguiente manera: se concatena la información almacenada en los registros de los 3 canales y se envía la trama resultante por comunicacion SPI de modo que pasados 15 ciclos de reloj se ha comunicado todas las muestras del evento. Ver Figura~\ref{detectorumbral}
+En la Figura~\ref{detectorumbral} se tiene un conjunto de comparadores conectados al registro [3, 2, 1] que determinan si el registro [3] es mayor y los registros [2,1] son menores al umbral de activación se procede a almacenar todas las posiciones del registro anterior de la siguiente manera: se concatena la información almacenada en los registros de los 3 canales y se envía la trama resultante por comunicacion SPI de modo que pasados 15 ciclos de reloj se ha comunicado todas las muestras del evento. Ver Figura~\ref{detectorumbral}
 \begin{figure}[H]
 \includegraphics[width=0.9\textwidth]{Figs/COMPARA.PNG} 
 \centering
@@ -191,7 +194,7 @@ En la Figura~\ref{flancos}, el circuito se activa cada vez que se cumple la cond
 \begin{figure}[H]
 \includegraphics[scale=0.9]{Figs/tr_status.PNG} 
 \centering
-\caption[Circuito concatenación trama de datos a comunicar protocolo SPI ]{Circuito de concatenación de la trama de los datos a comunicar (TR$\_$STATUS$\_$REG), etiquetas de activación para cada canal (S$\_$TR3,S$\_$TR2,S$\_$TR1), contador tiempo entre cada evento (CONT$\_$CLK$\_$ENTRE$\_$PPS$\_$REG)}
+\caption[Circuito concatenación trama de datos a comunicar protocolo SPI ]{Circuito de concatenación de la trama de los datos a comunicar (TR$\_$STATUS$\_$REG), etiquetas de activación para cada canal (S$\_$TR3 ,S$\_$TR2, S$\_$TR1), contador tiempo entre cada evento (CONT$\_$CLK$\_$ENTRE$\_$PPS$\_$REG)}
 \label{flancos}
 \end{figure}
 
