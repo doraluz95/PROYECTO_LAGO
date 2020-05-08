@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="9173333333fs"></ZoomStartTime>
+      <ZoomEndTime time="10503333334fs"></ZoomEndTime>
+      <Cursor1Time time="9603333000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="123"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/sim_top/clk_100m" type="logic">
+      <obj_property name="ElementShortName">clk_100m</obj_property>
+      <obj_property name="ObjectShortName">clk_100m</obj_property>
+   </wvobject>
+   <wvobject fp_name="group326" type="group">
+      <obj_property name="label">Trigger</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/clk_50mhz" type="logic">
+         <obj_property name="ElementShortName">clk_50mhz</obj_property>
+         <obj_property name="ObjectShortName">clk_50mhz</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/data_adc1" type="array">
+         <obj_property name="ElementShortName">data_adc1[11:0]</obj_property>
+         <obj_property name="ObjectShortName">data_adc1[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/data_adc2" type="array">
+         <obj_property name="ElementShortName">data_adc2[11:0]</obj_property>
+         <obj_property name="ObjectShortName">data_adc2[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/data_adc3" type="array">
+         <obj_property name="ElementShortName">data_adc3[11:0]</obj_property>
+         <obj_property name="ObjectShortName">data_adc3[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/trigg_set1" type="array">
+         <obj_property name="ElementShortName">trigg_set1[11:0]</obj_property>
+         <obj_property name="ObjectShortName">trigg_set1[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/trigg_set2" type="array">
+         <obj_property name="ElementShortName">trigg_set2[11:0]</obj_property>
+         <obj_property name="ObjectShortName">trigg_set2[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/trigg_set3" type="array">
+         <obj_property name="ElementShortName">trigg_set3[11:0]</obj_property>
+         <obj_property name="ObjectShortName">trigg_set3[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/pps_signal" type="logic">
+         <obj_property name="ElementShortName">pps_signal</obj_property>
+         <obj_property name="ObjectShortName">pps_signal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/CONTROL_FSM/pps" type="logic">
+         <obj_property name="ElementShortName">pps</obj_property>
+         <obj_property name="ObjectShortName">pps</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/CONTROL_FSM/statepps_reg" type="array">
+         <obj_property name="ElementShortName">statepps_reg[1:0]</obj_property>
+         <obj_property name="ObjectShortName">statepps_reg[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/CONTROL_FSM/statepps_next" type="array">
+         <obj_property name="ElementShortName">statepps_next[1:0]</obj_property>
+         <obj_property name="ObjectShortName">statepps_next[1:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/one_clk_pps" type="logic">
+         <obj_property name="ElementShortName">one_clk_pps</obj_property>
+         <obj_property name="ObjectShortName">one_clk_pps</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/CONTROL_FSM/cont_clk_entre_pps_reg" type="array">
+         <obj_property name="ElementShortName">cont_clk_entre_pps_reg[29:0]</obj_property>
+         <obj_property name="ObjectShortName">cont_clk_entre_pps_reg[29:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/pps_falso_led" type="logic">
+         <obj_property name="ElementShortName">pps_falso_led</obj_property>
+         <obj_property name="ObjectShortName">pps_falso_led</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/pfifo_status" type="logic">
+         <obj_property name="ElementShortName">pfifo_status</obj_property>
+         <obj_property name="ObjectShortName">pfifo_status</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/pwr_enA" type="logic">
+         <obj_property name="ElementShortName">pwr_enA</obj_property>
+         <obj_property name="ObjectShortName">pwr_enA</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[37:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[37:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/s_tr" type="logic">
+         <obj_property name="ElementShortName">s_tr</obj_property>
+         <obj_property name="ObjectShortName">s_tr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/cont_clk_entre_pps_reg" type="array">
+         <obj_property name="ElementShortName">cont_clk_entre_pps_reg[29:0]</obj_property>
+         <obj_property name="ObjectShortName">cont_clk_entre_pps_reg[29:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/wr_count_reg" type="array">
+         <obj_property name="ElementShortName">wr_count_reg[7:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_count_reg[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/tr_status_reg" type="array">
+         <obj_property name="ElementShortName">tr_status_reg[37:0]</obj_property>
+         <obj_property name="ObjectShortName">tr_status_reg[37:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ctr_status_reg" type="array">
+         <obj_property name="ElementShortName">ctr_status_reg[37:0]</obj_property>
+         <obj_property name="ObjectShortName">ctr_status_reg[37:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/muestras_adc1_reg_out" type="array">
+         <obj_property name="ElementShortName">muestras_adc1_reg_out[11:0]</obj_property>
+         <obj_property name="ObjectShortName">muestras_adc1_reg_out[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/muestras_adc2_reg_out" type="array">
+         <obj_property name="ElementShortName">muestras_adc2_reg_out[11:0]</obj_property>
+         <obj_property name="ObjectShortName">muestras_adc2_reg_out[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/muestras_adc3_reg_out" type="array">
+         <obj_property name="ElementShortName">muestras_adc3_reg_out[11:0]</obj_property>
+         <obj_property name="ObjectShortName">muestras_adc3_reg_out[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/data_to_fifo_reg" type="array">
+         <obj_property name="ElementShortName">data_to_fifo_reg[37:0]</obj_property>
+         <obj_property name="ObjectShortName">data_to_fifo_reg[37:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/out_4_2" type="array">
+         <obj_property name="ElementShortName">out_4_2[2:0]</obj_property>
+         <obj_property name="ObjectShortName">out_4_2[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/wr_fifo_en_reg" type="logic">
+         <obj_property name="ElementShortName">wr_fifo_en_reg</obj_property>
+         <obj_property name="ObjectShortName">wr_fifo_en_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/bits_data" type="array">
+         <obj_property name="ElementShortName">bits_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">bits_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADCBITS" type="array">
+         <obj_property name="ElementShortName">ADCBITS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADCBITS[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/L_ARRAY_MUESTRAS" type="array">
+         <obj_property name="ElementShortName">L_ARRAY_MUESTRAS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">L_ARRAY_MUESTRAS[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/L_ARRAY_PPS" type="array">
+         <obj_property name="ElementShortName">L_ARRAY_PPS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">L_ARRAY_PPS[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group175" type="group">
+      <obj_property name="label">Top nexys</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/sim_top/proyecto_top/NEXYS/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/NEXYS/clk_adc" type="logic">
+         <obj_property name="ElementShortName">clk_adc</obj_property>
+         <obj_property name="ObjectShortName">clk_adc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/NEXYS/ch1" type="array">
+         <obj_property name="ElementShortName">ch1[11:0]</obj_property>
+         <obj_property name="ObjectShortName">ch1[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/NEXYS/ch2" type="array">
+         <obj_property name="ElementShortName">ch2[11:0]</obj_property>
+         <obj_property name="ObjectShortName">ch2[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/NEXYS/adc_clk1" type="logic">
+         <obj_property name="ElementShortName">adc_clk1</obj_property>
+         <obj_property name="ObjectShortName">adc_clk1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/NEXYS/dir" type="array">
+         <obj_property name="ElementShortName">dir[9:0]</obj_property>
+         <obj_property name="ObjectShortName">dir[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/NEXYS/r_dir" type="array">
+         <obj_property name="ElementShortName">r_dir[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_dir[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group442" type="group">
+      <obj_property name="label">desplazamiento</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/clk_50mhz" type="logic">
+         <obj_property name="ElementShortName">clk_50mhz</obj_property>
+         <obj_property name="ObjectShortName">clk_50mhz</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/data_adc1" type="array">
+         <obj_property name="ElementShortName">data_adc1[11:0]</obj_property>
+         <obj_property name="ObjectShortName">data_adc1[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/data_adc2" type="array">
+         <obj_property name="ElementShortName">data_adc2[11:0]</obj_property>
+         <obj_property name="ObjectShortName">data_adc2[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/data_adc3" type="array">
+         <obj_property name="ElementShortName">data_adc3[11:0]</obj_property>
+         <obj_property name="ObjectShortName">data_adc3[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/muestras_adc1_reg_out" type="array">
+         <obj_property name="ElementShortName">muestras_adc1_reg_out[11:0]</obj_property>
+         <obj_property name="ObjectShortName">muestras_adc1_reg_out[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/muestras_adc2_reg_out" type="array">
+         <obj_property name="ElementShortName">muestras_adc2_reg_out[11:0]</obj_property>
+         <obj_property name="ObjectShortName">muestras_adc2_reg_out[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/muestras_adc3_reg_out" type="array">
+         <obj_property name="ElementShortName">muestras_adc3_reg_out[11:0]</obj_property>
+         <obj_property name="ObjectShortName">muestras_adc3_reg_out[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/trigg_set1" type="array">
+         <obj_property name="ElementShortName">trigg_set1[11:0]</obj_property>
+         <obj_property name="ObjectShortName">trigg_set1[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/trigg_set2" type="array">
+         <obj_property name="ElementShortName">trigg_set2[11:0]</obj_property>
+         <obj_property name="ObjectShortName">trigg_set2[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/trigg_set3" type="array">
+         <obj_property name="ElementShortName">trigg_set3[11:0]</obj_property>
+         <obj_property name="ObjectShortName">trigg_set3[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/cont_clk_entre_pps_reg" type="array">
+         <obj_property name="ElementShortName">cont_clk_entre_pps_reg[26:0]</obj_property>
+         <obj_property name="ObjectShortName">cont_clk_entre_pps_reg[26:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/s_tr" type="logic">
+         <obj_property name="ElementShortName">s_tr</obj_property>
+         <obj_property name="ObjectShortName">s_tr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/tr_status_reg" type="array">
+         <obj_property name="ElementShortName">tr_status_reg[37:0]</obj_property>
+         <obj_property name="ObjectShortName">tr_status_reg[37:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/ctr_status_reg" type="array">
+         <obj_property name="ElementShortName">ctr_status_reg[37:0]</obj_property>
+         <obj_property name="ObjectShortName">ctr_status_reg[37:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/muestras_adc1_reg" type="array">
+         <obj_property name="ElementShortName">muestras_adc1_reg[0:14][11:0]</obj_property>
+         <obj_property name="ObjectShortName">muestras_adc1_reg[0:14][11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/muestras_adc2_reg" type="array">
+         <obj_property name="ElementShortName">muestras_adc2_reg[0:14][11:0]</obj_property>
+         <obj_property name="ObjectShortName">muestras_adc2_reg[0:14][11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/muestras_adc3_reg" type="array">
+         <obj_property name="ElementShortName">muestras_adc3_reg[0:14][11:0]</obj_property>
+         <obj_property name="ObjectShortName">muestras_adc3_reg[0:14][11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/s_tr1" type="logic">
+         <obj_property name="ElementShortName">s_tr1</obj_property>
+         <obj_property name="ObjectShortName">s_tr1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/s_tr2" type="logic">
+         <obj_property name="ElementShortName">s_tr2</obj_property>
+         <obj_property name="ObjectShortName">s_tr2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/s_tr3" type="logic">
+         <obj_property name="ElementShortName">s_tr3</obj_property>
+         <obj_property name="ObjectShortName">s_tr3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/cont_trigger_reg" type="array">
+         <obj_property name="ElementShortName">cont_trigger_reg[29:0]</obj_property>
+         <obj_property name="ObjectShortName">cont_trigger_reg[29:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/tr_status_next" type="array">
+         <obj_property name="ElementShortName">tr_status_next[37:0]</obj_property>
+         <obj_property name="ObjectShortName">tr_status_next[37:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/ctr_status_next" type="array">
+         <obj_property name="ElementShortName">ctr_status_next[37:0]</obj_property>
+         <obj_property name="ObjectShortName">ctr_status_next[37:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/cont_trigger_next" type="array">
+         <obj_property name="ElementShortName">cont_trigger_next[37:0]</obj_property>
+         <obj_property name="ObjectShortName">cont_trigger_next[37:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/bits_data" type="array">
+         <obj_property name="ElementShortName">bits_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">bits_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/ADCBITS" type="array">
+         <obj_property name="ElementShortName">ADCBITS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADCBITS[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/L_ARRAY_MUESTRAS" type="array">
+         <obj_property name="ElementShortName">L_ARRAY_MUESTRAS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">L_ARRAY_MUESTRAS[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_top/proyecto_top/TRIGGER/ADQUISICION_MUESTRAS/L_ARRAY_PPS" type="array">
+         <obj_property name="ElementShortName">L_ARRAY_PPS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">L_ARRAY_PPS[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

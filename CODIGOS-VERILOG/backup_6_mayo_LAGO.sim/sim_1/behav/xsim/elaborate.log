@@ -1,0 +1,32 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5a4899ab215e43bea340dd2a8da5f57d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_top_behav xil_defaultlib.sim_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'data_adc3' [C:/Users/Doraluz/backup_2abril_lago/backup_2abril_lago.srcs/sources_1/imports/Doraluz/baseline/baseline.srcs/sources_1/new/PROYECTO_TOP.v:121]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'data_adc3' [C:/Users/Doraluz/backup_2abril_lago/backup_2abril_lago.srcs/sources_1/imports/Doraluz/baseline/baseline.srcs/sources_1/new/PROYECTO_TOP.v:141]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'data_in' [C:/Users/Doraluz/backup_2abril_lago/backup_2abril_lago.srcs/sources_1/imports/Doraluz/baseline/baseline.srcs/sources_1/new/PROYECTO_TOP.v:161]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'data_in' [C:/Users/Doraluz/backup_2abril_lago/backup_2abril_lago.srcs/sources_1/imports/Doraluz/baseline/baseline.srcs/sources_1/new/PROYECTO_TOP.v:170]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'data_in' [C:/Users/Doraluz/backup_2abril_lago/backup_2abril_lago.srcs/sources_1/imports/Doraluz/baseline/baseline.srcs/sources_1/new/PROYECTO_TOP.v:179]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_fsm
+Compiling module xil_defaultlib.registro_datos_por_seg_default
+Compiling module xil_defaultlib.adquisicion_muestras_default
+Compiling module xil_defaultlib.FSM_CONTROL
+Compiling module xil_defaultlib.trigger_v1
+Compiling module xil_defaultlib.data_adc
+Compiling module xil_defaultlib.base
+Compiling module xil_defaultlib.rampa_hv
+Compiling module xil_defaultlib.spi_slave_lbus
+Compiling module xil_defaultlib.contador_data
+Compiling module xil_defaultlib.lbus_regmap
+Compiling module xil_defaultlib.memoria_ram
+Compiling module xil_defaultlib.memoriacanal2
+Compiling module xil_defaultlib.top_nexys
+Compiling module xil_defaultlib.PROYECTO_TOP
+Compiling module xil_defaultlib.sim_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_top_behav

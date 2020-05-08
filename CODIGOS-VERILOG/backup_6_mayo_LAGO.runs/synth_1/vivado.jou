@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Mar 27 18:53:05 2020
+# Process ID: 7884
+# Current directory: C:/Users/Doraluz/project_FINAL/project_FINAL.runs/synth_1
+# Command line: vivado.exe -log PROYECTO_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PROYECTO_TOP.tcl
+# Log file: C:/Users/Doraluz/project_FINAL/project_FINAL.runs/synth_1/PROYECTO_TOP.vds
+# Journal file: C:/Users/Doraluz/project_FINAL/project_FINAL.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PROYECTO_TOP.tcl -notrace
