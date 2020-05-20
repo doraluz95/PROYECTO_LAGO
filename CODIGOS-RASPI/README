@@ -1,0 +1,3 @@
+#Install adafruit-gps, python 3.5 or higger
+pip3.6 install adafruit-circuitpython-gps
+pip3.6 install spidev
